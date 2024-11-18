@@ -1,0 +1,23 @@
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    height: '100%';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 345px;
+}
+
+.cardMedia {
+    border-bottom: 1px solid #ddd;
+    object-fit: cover;
+}
+
+.cardContent {
+    text-align: center;
+}
+
+.addToCartbtn {
+    margin-top: 10px;
+}
