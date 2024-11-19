@@ -3,14 +3,14 @@ import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import styles from '../styles/Navbar.module.css'
 
 
-export default function Navbar() {
+export default function Navbar({ onCartClick, count }) {
     return (
         <AppBar position="sticky">
             <Toolbar varient="dense" className={styles.navBar}>
                 <Typography variant="h5">Shopping Cart</Typography>
-                <IconButton color="inherit">
-                    <Badge color="secondary" badgeContent={5}>
-                        <ShoppingCartIcon/>
+                <IconButton color="inherit" onClick={onCartClick}>
+                    <Badge color="secondary" badgeContent={count}>
+                        <ShoppingCartIcon />
                     </Badge>
                 </IconButton>
             </Toolbar>

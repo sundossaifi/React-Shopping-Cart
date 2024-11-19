@@ -1,7 +1,7 @@
 import { Card, CardMedia, CardContent, Button, Typography, CardActions } from "@mui/material";
 import styles from "../styles/ProductCard.module.css";
 
-export default function ProductCard({ product }) {
+export default function ProductCard({ product, addToCart }) {
     return (
         <Card className={styles.card}>
             <CardMedia
@@ -20,6 +20,7 @@ export default function ProductCard({ product }) {
                     variant="contained"
                     color="primary"
                     className={styles.addToCartbtn}
+                    onClick={() => addToCart(product)}
                 >
                     Add to Cart
                 </Button>
